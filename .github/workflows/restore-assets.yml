@@ -1,0 +1,23 @@
+name: One-time website asset import
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/import-assets/manifest.json'
+permissions:
+  contents: write
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore and verify all original binary files
+        run: python3 .github/scripts/restore-assets.py
+      - name: Save full website and remove temporary importer
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -f .github/workflows/restore-assets.yml .github/scripts/restore-assets.py
+          git add -A
+          git commit -m "Restore complete Coffee 26 website assets and remove temporary importer"
+          git push
