@@ -1,0 +1,12 @@
+{
+  "name": "coffee-26",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Сайт и меню Coffee 26",
+  "scripts": {
+    "start": "python3 -m http.server 4173",
+    "test": "node --test tests/menu.test.js",
+    "skill:install": "npx impeccable@4.8.0 install --providers=codex --scope=project"
+  }
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f8f4ec">
+<meta name="description" content="Coffee 26: кофе, завтраки до 20:00 и сэндвичи. Выберите раздел, поверните колесо вкусов и посмотрите меню с изображениями, составом и ценами.">
+<title>Coffee 26 — кофе, завтраки и сэндвичи</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/fonts.css"><link rel="stylesheet" href="style.css">
+<link rel="preload" href="assets/hero-v2.webp" as="image" fetchpriority="high"><script src="app.js" type="module"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 5l7 7-7 7"/></symbol>
+<symbol id="search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+<symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+<symbol id="cup" viewBox="0 0 24 24"><path d="M4 9h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9ZM16 10h2a3 3 0 0 1 0 6h-2M7 3v2m5-2v2M3 23h15"/></symbol>
+<symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></symbol>
+<symbol id="rotate" viewBox="0 0 24 24"><path d="M20 8a9 9 0 1 0 .3 7M20 3v5h-5"/></symbol>
+<symbol id="grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+</defs></svg>
+<header class="header"><div class="wrap header-inner"><a href="#/" class="brand" aria-label="Coffee 26 — главная"><svg class="icon brand-icon" aria-hidden="true"><use href="#cup"/></svg><span>Coffee <b>26</b><span class="brand-dot">.</span></span></a><nav aria-label="Основная навигация"><a href="#/" data-nav="home">Главная</a><a href="#/categories" data-nav="categories">Меню</a><a href="#/menu/breakfast" data-nav="breakfast">Завтраки</a></nav><button class="search-toggle round-button" aria-label="Найти в меню" aria-expanded="false" aria-controls="header-search" type="button"><svg class="icon" aria-hidden="true"><use href="#search"/></svg></button></div></header>
+<div class="search-drawer" id="header-search" hidden><form class="wrap header-search-form" id="global-search" role="search"><label class="sr-only" for="global-query">Поиск по всему меню</label><svg class="icon" aria-hidden="true"><use href="#search"/></svg><input id="global-query" name="q" type="search" placeholder="Кофе, лосось, сырники…" maxlength="100" autocomplete="off"><button class="button rust" type="submit">Найти</button><button class="round-button search-close" type="button" aria-label="Закрыть поиск"><svg class="icon" aria-hidden="true"><use href="#close"/></svg></button></form></div>
+<main id="main" tabindex="-1"></main>
+<footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#/">Coffee <b>26</b><span class="brand-dot">.</span></a><nav aria-label="Навигация внизу страницы"><a href="#/categories">Меню</a><a href="#/menu/breakfast">Завтраки до 20:00</a><a href="assets/menu.pdf" target="_blank" rel="noopener">Меню в PDF</a></nav><p>Кофе. Завтраки. И ещё одна чашка.</p></div><div class="wrap footer-bottom"><span>Изображения — иллюстрации меню. Подача может отличаться.</span><a href="menu.html">Текстовая версия меню</a></div></footer>
+<noscript><div class="noscript">Для колеса меню включите JavaScript. <a href="menu.html">Открыть полное текстовое меню</a></div></noscript>
+</body></html>
